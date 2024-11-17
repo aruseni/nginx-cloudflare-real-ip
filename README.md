@@ -77,7 +77,7 @@ real_ip_header CF-Connecting-IP;
 
 ## Crontab
 Change the location of "/opt/scripts/cloudflare-ip-whitelist-sync.sh" anywhere you want. 
-CloudFlare ip addresses are automatically refreshed every day, and nginx will be realoded when synchronization is completed.
+CloudFlare ip addresses are automatically refreshed every day, and nginx will be reloaded when synchronization is completed.
 ```sh
 # Auto sync ip addresses of Cloudflare and reload nginx
 30 2 * * * /opt/scripts/cloudflare-ip-whitelist-sync.sh >/dev/null 2>&1
